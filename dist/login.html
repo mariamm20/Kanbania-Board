@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanbania Board</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden block">
+
+    <main class="flex lg:h-screen flex-wrap-reverse">
+
+
+        <section class="bg-white w-full lg:w-6/12 py-8 px-4 lg:px-20 relative flex flex-col justify-center first-section">
+
+            <h2 class="text-2xl my-10">
+                Enter Account
+            </h2>
+           
+            <form id="form">
+                <div class="input-field mb-6">
+                <input type="email" placeholder="Your Email" id="email"
+                    class="w-full  border-gray-500 outline-none border-2 rounded-3xl py-3 px-5" />
+                    <div class="error mt-1 ml-2 text-sm"></div>
+                </div>
+                <div class="input-field mb-6">
+                <input type="password" placeholder="Your Password" id="password"
+                    class="w-full   border-gray-500 outline-none border-2 rounded-3xl py-3 px-5" />
+                    <div class="error mt-1 ml-2 text-sm"></div>
+                </div>
+                <div class="text-left mb-10">
+                    <button type="submit" class="learn-more ">Login</button>
+                </div>
+
+
+            </form>
+            <div class="flex justify-between items-center mt-10 flex-wrap gap-5">
+                <p class="text-gray-400">Don't have an account ? <a href="register.html" class="text-skyblue underline">Register&nbsp;Now</a></p>
+                <a href="index.html">
+                    <h1 class="uppercase text-xl md:text-2xl text-center tracking-widest" id="h1-styling">
+                        Kanbania Board
+                    </h1>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="bg-mybg bg-cover  relative w-full lg:w-6/12 py-14 px-8 lg:px-12 xl:px-16 second-section">
+            <h1 class="text-5xl uppercase text-left md:text-right tracking-widest text-gray-800">
+                Login Now
+            </h1>
+
+
+            <div class="relative cursor-pointer">
+                <p class=" mt-16 text-xl text-gray-700 leading-10 text-left md:text-right ">
+                    Unlock the door to your personalized Kanban board. <br>Tailored exclusively for personal task
+                    management.
+                </p>
+
+                <p class="text-2xl text-pinky text-left md:text-right  text-stroke tracking-widest rounded-xl py-6 hover:text-gray-700">
+                    Prioritizing tasks
+                </p>
+                <p class="text-2xl text-greeny text-left md:text-right  text-stroke tracking-widest rounded-xl py-6 hover:text-gray-700">
+                    Setting goals
+                </p>
+                <p class="text-2xl text-skyblue text-left md:text-right  text-stroke tracking-widest rounded-xl py-6 hover:text-gray-700">
+                    Visualizing progress
+                </p>
+                <div class="hidden lg:block w-44 absolute left-0 bottom-0 transform -rotate-12">
+                    <img src="../dist/img/door.gif" width="100%" alt="priority" />
+                </div>
+            </div>
+
+            <div class="mt-5 text-gray-900 hover:text-pink-950 md:mt-10">
+                <h2 class="text-left md:text-right ">
+                    Contact Us
+                </h2>
+                <p class="text-left md:text-right text-sm md:text-xl">
+                    <a href="https://www.linkedin.com/in/mariamm20/" target="_blank"> <i
+                            class='bx bxl-linkedin-square'></i> Mariam Mohamed Ibrahim </a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="../dist/js/loginValidations.js"></script>
+    <script src="../dist/js/index.js"></script>
+</body>
+
+</html>

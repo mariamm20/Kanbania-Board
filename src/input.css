@@ -1,0 +1,170 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+
+:root {
+  --bg: #fff;
+  --text: #382b22;
+  --light-pink: #fff0f0;
+  --pink: #ffe9e9;
+  --dark-pink: #f9c4d2;
+  --pink-border: #b18597;
+  --pink-shadow: #ffe3e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+}
+.board{
+  display: block;
+
+}
+.board input{
+  border-color: #b18597;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  margin-top: 50px;
+}
+
+button.learn-more {
+  font-weight: 600;
+  color: var(--text);
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: var(--light-pink);
+  border: 2px solid var(--pink-border);
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.board button.learn-more{
+  padding: .70em 1em;
+}
+
+button.learn-more::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--dark-pink);
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px var(--pink-border), 0 0.625em 0 0 var(--pink-shadow);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.learn-more:hover {
+  background: var(--pink);
+  transform: translate(0, 0.25em);
+}
+
+button.learn-more:hover::before {
+  box-shadow: 0 0 0 2px var(--pink-border), 0 0.5em 0 0 var(--pink-shadow);
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+button.learn-more:active {
+  background: var(--pink);
+  transform: translate(0em, 0.75em);
+}
+
+button.learn-more:active::before {
+  box-shadow: 0 0 0 2px var(--pink-border), 0 0 var(--pink-shadow);
+  transform: translate3d(0, 0, -1em);
+}
+
+form .learn-more{
+  margin-top: 20px;
+}
+.words{
+  z-index: 2;
+}
+.text-stroke{
+  -webkit-text-stroke: 1px;
+  text-shadow:
+   -3px -3px 0 #fff,  
+    3px -3px 0 #fff,
+    -3px 3px 0 #fff,
+     3px 3px 0 #fff;
+}
+.error{
+  @apply text-pink-900
+}
+.singleNote{
+ @apply p-10 bg-gray-100 rounded text-gray-900 text-center my-3 bg-mybg bg-cover  w-6/12 relative h-max
+}
+.singleNote span{
+  @apply  cursor-pointer absolute top-3 right-3 text-transparent
+}
+.singleNote:hover span{
+  color:  rgb(17 24 39 / var(--tw-text-opacity));
+}
+.notes-place{
+  overflow-y: scroll;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.progress-done {
+  overflow-y: scroll;
+  height: 320px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b18597;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.is-dragging {
+  scale: 1.05;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: rgb(50, 50, 50);
+  color: white;
+}

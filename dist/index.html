@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanbania Board</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="overflow-hidden bg-mybg bg-cover flex flex-col items-center justify-center">
+    <div class="hidden md:block absolute">
+        <ul id="scene">
+            <li class="layer " data-depth="0.1">
+                <img src="../dist/img/patterns/1.png" alt="img" width="100%" />
+            </li>
+            <li class="layer" data-depth="0.2">
+                <img src="../dist/img/patterns/4.png" alt="img" width="100%" />
+            </li>
+            <li class="layer" data-depth="0.3">
+                <img src="../dist/img/patterns/3.png" alt="img" width="100%" />
+            </li>
+            <li class="layer" data-depth="0.4">
+                <img src="../dist/img/patterns/2.png" alt="img" width="100%" />
+            </li>
+        </ul>
+    </div>
+    <main class="flex flex-col justify-center items-center text-center bg-white mx-8 sm:mx-20 py-10 rounded-2xl">
+        <a href="index.html" class="words" > <h1 class="uppercase text-4xl sm:text-6xl md:text-8xl lg:text-9xl tracking-widest words" id="h1-styling">
+            Kanbania Board
+        </h1></a>
+        <p class="w-5/6 md:w-4/6 lg:w-5/12 mt-10 leading-9 text-gray-800 words">
+            A personal Kanban board is a visual organization tool for individuals to manage and prioritize tasks in their daily life. It typically consists of three main columns: "To-Do," "In Progress," and "Done."
+        </p>
+        <button class="learn-more" onclick="location.href='login.html'">Get Started</button>
+        
+          
+    </main>
+
+
+
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script type="text/javascript">
+        var scene1 = document.getElementById('scene1');
+
+        try {
+            var parallaxInstance1 = new Parallax(scene);
+
+        } catch (error) {
+            console.error('Parallax initialization error:', error);
+        }
+    </script>
+    <script src="../dist/js/index.js"></script>
+</body>
+</html>

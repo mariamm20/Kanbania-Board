@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanbania Board</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../dist/output.css"/>
+    <style>
+        .draggable {
+            cursor: grab;
+        }
+    </style>
+
+</head>
+
+<body class=" gap-10 bg-mybg bg-cover m-6 md:m-10 board">
+    <header class=" flex flex-wrap flex-col md:flex-row gap-10 md:justify-between items-center text-center bg-white  py-5 px-10 rounded-2xl">
+        <a href="board.html">
+            <h1 class="uppercase text-xl md:text-2xl text-center tracking-widest" id="h1-styling">
+                Kanbania Board
+            </h1>
+        </a>
+        <p>Hello, <span id="userName">Mariam Mohamed</span></p>
+        <a href="index.html" class="flex items-center text-skyblue hover:text-blue-500"><i
+                class='bx bx-log-out'></i>&nbsp;Logout</a>
+    </header>
+    
+    <main class=" w-full py-5" >
+        <section class="w-full md:w-8/12 m-auto">
+            <div class="input-field relative my-10">
+                <input type="text" placeholder="Write a note ... " id="note"
+                    class="w-full outline-none border-2  rounded-3xl py-4 px-5" />
+                <div class="absolute right-0 bottom-2">
+                    <button type="button" id="add-btn" class="learn-more"><i class='bx bx-plus text-3xl'></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="w-full flex md:flex-nowrap flex-wrap gap-5">
+            
+            <div class= " w-full md:w-4/12 bg-white border border-gray-500 rounded-3xl">
+                <h2 class="p-6 border-b border-gray-500 text-center text-pink-600 text-xl">
+                    To-Do List
+                </h2>
+
+                <div class="notes-place px-6" id="todo" >
+                    
+                    
+                </div>
+            </div>
+            <div class="w-full md:w-4/12 bg-white border border-gray-500 rounded-3xl ">
+                <h2 class="p-6 border-b border-gray-500 text-center text-green-500 text-xl">
+                    In Progress
+                </h2>
+
+                <div class="progress-done notes-place px-6" id="progress">
+                    
+                </div>
+            </div>
+            <div class="w-full md:w-4/12 bg-white border border-gray-500 rounded-3xl progress">
+                <h2 class="p-6 border-b border-gray-500 text-center text-blue-700 text-xl">
+                    Done
+                </h2>
+
+                <div class="progress-done notes-place px-6" id="done" >
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../dist/js/draganddrop.js"></script>
+    <script src="../dist/js/index.js"></script>
+</body>
+
+</html>

@@ -24,7 +24,7 @@ All data is stored in local storage of browser and session storage
 ## ✨ Demo
 
 Kanbania Board is hosted on Github pages >> 
-[Kanbania Website](https://mariamm20.github.io/ITI-Dashboard/dist/index.html)
+[Kanbania Website](https://mariamm20.github.io/Kanbania-Board/dist/index.html)
 
 
 ## ✨ Installation
@@ -32,10 +32,9 @@ Kanbania Board is hosted on Github pages >>
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd ITI-Dashboard
+cd Kanbania-Board
 npm i
 ```
-###### For testing purposes, open a live server. Use the following credentials for admin login:
-- username: admin101
-- password: admin101+
+###### For testing create account then login
+###### Enjoy using your kanbania board 🚀
 

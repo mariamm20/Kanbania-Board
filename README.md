@@ -35,6 +35,7 @@ Install the dependencies and devDependencies and start the server.
 cd Kanbania-Board
 npm i
 ```
+### Unfortunately, Not compatible on mobile phones
 ###### For testing create account then login
 ###### Enjoy using your kanbania board 🚀
 

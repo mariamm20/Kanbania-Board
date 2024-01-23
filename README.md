@@ -10,8 +10,8 @@ Kanbania Board is a simple dynamic website which has the following specs.
 - Move Tasks from Todo to progress or to done and vise versa
 - Delete any task in any section
 
-All data is stored in local storage of browser and session storage 
-I used Regex Expressions to validate user inputs in my forms
+##### All data is stored in local storage of browser and session storage 
+##### I used Regex Expressions to validate user inputs in my forms
 
 ## ✨ Technologies
 ### Front-End
